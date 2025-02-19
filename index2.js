@@ -78,14 +78,17 @@ const checkWinner = () => {
       }
   }
 
- 
+
   if (!hasWin && [...boxes].every((box) => box.innerText !== "")) {
       msg.innerText = 'Match Drawn!';
-      msg.style.color ="white"
+      msg.style.color = "white";
       msgContainer.classList.remove('hide');
-      image.classList.add('d-none');
       gameContainer.classList.add('d-none');
 
+      
+      if (image) {
+          image.classList.add('d-none');
+      }
   }
 };
 
