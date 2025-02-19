@@ -1,0 +1,57 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", serif;
+}
+@media (min-width: 992px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+.container {
+  height: 70vh;
+}
+
+body {
+  text-align: center;
+  background-color: #1fc8db;
+  background-image: linear-gradient(140deg, #eadedb 0%, #bc70a4 50%, #bfd641 75%);
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  background-color: yellow;
+}
+
+.box:hover {
+  background-color: gray;
+}
+
+#reset, #new-btn {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+#msg {
+  font-size: 8vmin;
+}
+
+.hide {
+  display: none;
+}
